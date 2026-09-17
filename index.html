@@ -10,7 +10,6 @@
     <title>BMO Centre Exhibitor Advertising</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -19,6 +18,8 @@
 
         html,
         body {
+            margin: 0;
+            padding: 0;
             width: 100%;
             min-height: 100%;
             background: #ffffff;
@@ -28,282 +29,51 @@
             overflow-x: hidden;
         }
 
-
-        /* =========================
-           GENERAL DESIGN
-           ========================= */
-
-        .design {
-            position: relative;
-            width: 100%;
-        }
-
-        .design img {
-            display: block;
+        .desktop-image,
+        .mobile-image {
             width: 100%;
             height: auto;
+            margin: 0;
+            padding: 0;
         }
 
-
-        /* DESKTOP DEFAULT */
-
-        .desktop {
+        /* DESKTOP */
+        .desktop-image {
             display: block;
         }
 
-        .mobile {
+        .mobile-image {
             display: none;
         }
 
-
-        /* =========================
-           CLICKABLE AREAS
-           ========================= */
-
-        .hotspot {
-            position: absolute;
-            display: block;
-            z-index: 20;
-            cursor: pointer;
-
-            /* TEMPORARY RED FOR TESTING */
-            background: rgba(255, 0, 0, 0.30);
-        }
-
-
-        /* =========================
-           DESKTOP HOTSPOTS
-           ========================= */
-
-        .desktop .top-email {
-            left: 66%;
-            top: 1.15%;
-            width: 26%;
-            height: 0.70%;
-        }
-
-        .desktop .top-phone {
-            left: 73%;
-            top: 2.05%;
-            width: 19%;
-            height: 0.70%;
-        }
-
-        .desktop .book-kiosk {
-            left: 75%;
-            top: 24.25%;
-            width: 17%;
-            height: 0.80%;
-        }
-
-        .desktop .book-exhibit {
-            left: 75%;
-            top: 35.05%;
-            width: 17%;
-            height: 0.80%;
-        }
-
-        .desktop .book-facility {
-            left: 75%;
-            top: 46.25%;
-            width: 17%;
-            height: 0.80%;
-        }
-
-        .desktop .bottom-email {
-            left: 31%;
-            top: 61.25%;
-            width: 38%;
-            height: 0.70%;
-        }
-
-        .desktop .bottom-phone {
-            left: 40%;
-            top: 62.55%;
-            width: 22%;
-            height: 0.70%;
-        }
-
-
-        /* =========================
-           MOBILE VERSION
-           ========================= */
-
+        /* MOBILE */
         @media screen and (max-width: 900px) {
-
-            .desktop {
+            .desktop-image {
                 display: none;
             }
 
-            .mobile {
+            .mobile-image {
                 display: block;
             }
-
-
-            .mobile .book-kiosk {
-                left: 73%;
-                top: 26.35%;
-                width: 20%;
-                height: 0.70%;
-            }
-
-            .mobile .book-exhibit {
-                left: 73%;
-                top: 39.75%;
-                width: 20%;
-                height: 0.70%;
-            }
-
-            .mobile .book-facility {
-                left: 72%;
-                top: 55.30%;
-                width: 21%;
-                height: 0.70%;
-            }
-
-            .mobile .bottom-email {
-                left: 21%;
-                top: 68.35%;
-                width: 61%;
-                height: 0.65%;
-            }
-
-            .mobile .bottom-phone {
-                left: 36%;
-                top: 69.75%;
-                width: 34%;
-                height: 0.65%;
-            }
-
         }
-
     </style>
 </head>
 
-
 <body>
 
-
-    <!-- =================================
-         DESKTOP
-         ================================= -->
-
-    <div class="design desktop">
-
-        <img src="./deskctop final (3).png"
-             alt="BMO Centre Exhibitor Advertising">
+    <!-- DESKTOP -->
+    <img
+        class="desktop-image"
+        src="./desktop final version.png"
+        alt="BMO Centre Exhibitor Advertising">
 
 
-        <!-- TOP EMAIL -->
-
-        <a class="hotspot top-email"
-           href="mailto:exhibitorads@calgarystampede.com"
-           aria-label="Email Exhibitor Advertising">
-        </a>
-
-
-        <!-- TOP PHONE -->
-
-        <a class="hotspot top-phone"
-           href="tel:+14034794731"
-           aria-label="Call Exhibitor Advertising">
-        </a>
-
-
-        <!-- MOBILE KIOSK BOOK NOW -->
-
-        <a class="hotspot book-kiosk"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
-           aria-label="Book Mobile Kiosk Display">
-        </a>
-
-
-        <!-- EXHIBIT DISPLAY BOOK NOW -->
-
-        <a class="hotspot book-exhibit"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
-           aria-label="Book Exhibit Display">
-        </a>
-
-
-        <!-- FACILITY DISPLAY BOOK NOW -->
-
-        <a class="hotspot book-facility"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
-           aria-label="Book Facility Display">
-        </a>
-
-
-        <!-- BOTTOM EMAIL -->
-
-        <a class="hotspot bottom-email"
-           href="mailto:exhibitorads@calgarystampede.com"
-           aria-label="Email Exhibitor Advertising">
-        </a>
-
-
-        <!-- BOTTOM PHONE -->
-
-        <a class="hotspot bottom-phone"
-           href="tel:+14034794731"
-           aria-label="Call Exhibitor Advertising">
-        </a>
-
-    </div>
-
-
-
-    <!-- =================================
-         MOBILE
-         ================================= -->
-
-    <div class="design mobile">
-
-        <img src="./mobile final (3).png"
-             alt="BMO Centre Exhibitor Advertising">
-
-
-        <!-- MOBILE KIOSK BOOK NOW -->
-
-        <a class="hotspot book-kiosk"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
-           aria-label="Book Mobile Kiosk Display">
-        </a>
-
-
-        <!-- EXHIBIT DISPLAY BOOK NOW -->
-
-        <a class="hotspot book-exhibit"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
-           aria-label="Book Exhibit Display">
-        </a>
-
-
-        <!-- FACILITY DISPLAY BOOK NOW -->
-
-        <a class="hotspot book-facility"
-           href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
-           aria-label="Book Facility Display">
-        </a>
-
-
-        <!-- BOTTOM EMAIL -->
-
-        <a class="hotspot bottom-email"
-           href="mailto:exhibitorads@calgarystampede.com"
-           aria-label="Email Exhibitor Advertising">
-        </a>
-
-
-        <!-- BOTTOM PHONE -->
-
-        <a class="hotspot bottom-phone"
-           href="tel:+14034794731"
-           aria-label="Call Exhibitor Advertising">
-        </a>
-
-    </div>
-
+    <!-- MOBILE -->
+    <img
+        class="mobile-image"
+        src="./mobile final version (1).png"
+        alt="BMO Centre Exhibitor Advertising">
 
 </body>
+
 </html>
