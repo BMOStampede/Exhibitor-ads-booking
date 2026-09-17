@@ -16,29 +16,43 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      background: #ffffff;
+      background: white;
     }
 
-    picture,
-    img {
+    .desktop-image,
+    .mobile-image {
       display: block;
       width: 100%;
       height: auto;
+    }
+
+    .mobile-image {
+      display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      .desktop-image {
+        display: none;
+      }
+
+      .mobile-image {
+        display: block;
+      }
     }
   </style>
 </head>
 
 <body>
-  <picture>
-    <source
-      media="(max-width: 767px)"
-      srcset="mobile final discount.png"
-    >
+  <img
+    class="desktop-image"
+    src="./desktop.png"
+    alt="Exhibitor advertising information"
+  >
 
-    <img
-      src="desktop final discount (1).png"
-      alt="Exhibitor advertising information"
-    >
-  </picture>
+  <img
+    class="mobile-image"
+    src="./mobile.png"
+    alt="Exhibitor advertising information"
+  >
 </body>
 </html>
