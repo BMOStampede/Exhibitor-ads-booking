@@ -1,79 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <title>Exhibitor Ads</title>
 
-    <title>BMO Centre Exhibitor Advertising</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background: #ffffff;
+    }
 
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100%;
-            background: #ffffff;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        .desktop-image,
-        .mobile-image {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* DESKTOP */
-        .desktop-image {
-            display: block;
-        }
-
-        .mobile-image {
-            display: none;
-        }
-
-        /* MOBILE */
-        @media screen and (max-width: 900px) {
-            .desktop-image {
-                display: none;
-            }
-
-            .mobile-image {
-                display: block;
-            }
-        }
-    </style>
+    picture,
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
+  <picture>
+    <source
+      media="(max-width: 767px)"
+      srcset="mobile final discount.png"
+    >
 
-    <!-- DESKTOP -->
     <img
-        class="desktop-image"
-        src="./desktop final version.png"
-        alt="BMO Centre Exhibitor Advertising">
-
-
-    <!-- MOBILE -->
-    <img
-        class="mobile-image"
-        src="./mobile final version (1).png"
-        alt="BMO Centre Exhibitor Advertising">
-
+      src="desktop final discount (1).png"
+      alt="Exhibitor advertising information"
+    >
+  </picture>
 </body>
-
 </html>
