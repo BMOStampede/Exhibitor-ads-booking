@@ -11,10 +11,6 @@
 
 <style>
 
-/* =========================================
-   RESET
-   ========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +29,9 @@ body {
 }
 
 
-/* =========================================
-   DESIGN
-   ========================================= */
+/* =========================
+   DESIGN CONTAINER
+   ========================= */
 
 .design {
     position: relative;
@@ -58,11 +54,9 @@ body {
 }
 
 
-/* =========================================
+/* =========================
    CLICKABLE AREAS
-
-   RED IS ONLY FOR TESTING.
-   ========================================= */
+   ========================= */
 
 .hotspot {
     position: absolute;
@@ -70,16 +64,14 @@ body {
     z-index: 20;
     cursor: pointer;
 
+    /* TEMPORARY RED TEST BOXES */
     background: rgba(255, 0, 0, 0.35);
 }
 
 
-/* =========================================
-   DESKTOP HOTSPOTS
-   ========================================= */
-
-
-/* TOP EMAIL */
+/* =========================
+   DESKTOP POSITIONS
+   ========================= */
 
 .desktop .top-email {
     left: 66%;
@@ -88,19 +80,12 @@ body {
     height: 0.70%;
 }
 
-
-/* TOP PHONE */
-
 .desktop .top-phone {
     left: 73%;
     top: 2.05%;
     width: 19%;
     height: 0.70%;
 }
-
-
-/* BOOK NOW:
-   MOBILE KIOSK DISPLAY */
 
 .desktop .book-kiosk {
     left: 75%;
@@ -109,20 +94,12 @@ body {
     height: 0.80%;
 }
 
-
-/* BOOK NOW:
-   EXHIBIT DISPLAY */
-
 .desktop .book-exhibit {
     left: 75%;
     top: 35.05%;
     width: 17%;
     height: 0.80%;
 }
-
-
-/* BOOK NOW:
-   FACILITY DISPLAY */
 
 .desktop .book-facility {
     left: 75%;
@@ -131,18 +108,12 @@ body {
     height: 0.80%;
 }
 
-
-/* BOTTOM EMAIL */
-
 .desktop .bottom-email {
     left: 31%;
     top: 61.25%;
     width: 38%;
     height: 0.70%;
 }
-
-
-/* BOTTOM PHONE */
 
 .desktop .bottom-phone {
     left: 40%;
@@ -152,10 +123,9 @@ body {
 }
 
 
-
-/* =========================================
+/* =========================
    MOBILE
-   ========================================= */
+   ========================= */
 
 @media screen and (max-width: 900px) {
 
@@ -167,20 +137,12 @@ body {
         display: block;
     }
 
-
-    /* BOOK NOW:
-       MOBILE KIOSK DISPLAY */
-
     .mobile .book-kiosk {
         left: 73%;
         top: 26.35%;
         width: 20%;
         height: 0.70%;
     }
-
-
-    /* BOOK NOW:
-       EXHIBIT DISPLAY */
 
     .mobile .book-exhibit {
         left: 73%;
@@ -189,19 +151,12 @@ body {
         height: 0.70%;
     }
 
-
-    /* BOOK NOW:
-       FACILITY DISPLAY */
-
     .mobile .book-facility {
         left: 72%;
         top: 55.30%;
         width: 21%;
         height: 0.70%;
     }
-
-
-    /* BOTTOM EMAIL */
 
     .mobile .bottom-email {
         left: 21%;
@@ -210,16 +165,12 @@ body {
         height: 0.65%;
     }
 
-
-    /* BOTTOM PHONE */
-
     .mobile .bottom-phone {
         left: 36%;
         top: 69.75%;
         width: 34%;
         height: 0.65%;
     }
-
 }
 
 </style>
@@ -229,18 +180,17 @@ body {
 <body>
 
 
-<!-- =========================================
-     DESKTOP VERSION
-     ========================================= -->
+<!-- ==========================================
+     DESKTOP
+     EXACT FILE: desktop final v.webp
+     ========================================== -->
 
 <div class="design desktop">
 
     <img
-        src="desktop%20final%20v.webp"
+        src="desktop final v.webp"
         alt="BMO Centre Exhibitor Advertising">
 
-
-    <!-- TOP EMAIL -->
 
     <a
         class="hotspot top-email"
@@ -249,16 +199,12 @@ body {
     </a>
 
 
-    <!-- TOP PHONE -->
-
     <a
         class="hotspot top-phone"
         href="tel:+14034794731"
         aria-label="Call Exhibitor Advertising">
     </a>
 
-
-    <!-- BOOK MOBILE KIOSK -->
 
     <a
         class="hotspot book-kiosk"
@@ -267,16 +213,12 @@ body {
     </a>
 
 
-    <!-- BOOK EXHIBIT DISPLAY -->
-
     <a
         class="hotspot book-exhibit"
         href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
         aria-label="Book Exhibit Display">
     </a>
 
-
-    <!-- BOOK FACILITY DISPLAY -->
 
     <a
         class="hotspot book-facility"
@@ -285,16 +227,12 @@ body {
     </a>
 
 
-    <!-- BOTTOM EMAIL -->
-
     <a
         class="hotspot bottom-email"
         href="mailto:exhibitorads@calgarystampede.com"
         aria-label="Email Exhibitor Advertising">
     </a>
 
-
-    <!-- BOTTOM PHONE -->
 
     <a
         class="hotspot bottom-phone"
@@ -306,18 +244,17 @@ body {
 
 
 
-<!-- =========================================
-     MOBILE VERSION
-     ========================================= -->
+<!-- ==========================================
+     MOBILE
+     EXACT FILE: mobile final v.png
+     ========================================== -->
 
 <div class="design mobile">
 
     <img
-        src="mobile%20final%20v.png"
+        src="mobile final v.png"
         alt="BMO Centre Exhibitor Advertising">
 
-
-    <!-- BOOK MOBILE KIOSK -->
 
     <a
         class="hotspot book-kiosk"
@@ -326,16 +263,12 @@ body {
     </a>
 
 
-    <!-- BOOK EXHIBIT DISPLAY -->
-
     <a
         class="hotspot book-exhibit"
         href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
         aria-label="Book Exhibit Display">
     </a>
 
-
-    <!-- BOOK FACILITY DISPLAY -->
 
     <a
         class="hotspot book-facility"
@@ -344,16 +277,12 @@ body {
     </a>
 
 
-    <!-- BOTTOM EMAIL -->
-
     <a
         class="hotspot bottom-email"
         href="mailto:exhibitorads@calgarystampede.com"
         aria-label="Email Exhibitor Advertising">
     </a>
 
-
-    <!-- BOTTOM PHONE -->
 
     <a
         class="hotspot bottom-phone"
