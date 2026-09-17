@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>BMO Centre Exhibitor Advertising</title>
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     width: 100%;
     min-height: 100%;
-    background: white;
+    background: #fff;
 }
 
 body {
     overflow-x: hidden;
 }
 
-
-/* ===============================
-   DESIGN
-   =============================== */
+/* PAGE IMAGE */
 
 .design {
     position: relative;
@@ -44,6 +36,8 @@ body {
     height: auto;
 }
 
+/* DESKTOP BY DEFAULT */
+
 .desktop {
     display: block;
 }
@@ -52,25 +46,22 @@ body {
     display: none;
 }
 
-
-/* ===============================
-   TEST CLICKABLE AREAS
-   =============================== */
+/* CLICKABLE AREAS */
 
 .hotspot {
     position: absolute;
     display: block;
-    z-index: 20;
+    z-index: 10;
     cursor: pointer;
 
-    /* TEMPORARY — KEEP RED */
-    background: rgba(255, 0, 0, 0.35);
+    /* TEMPORARY RED SO WE CAN POSITION THEM */
+    background: rgba(255, 0, 0, 0.30);
 }
 
 
-/* ===============================
-   DESKTOP HOTSPOTS
-   =============================== */
+/* =========================
+   DESKTOP LINKS
+   ========================= */
 
 .desktop .top-email {
     left: 66%;
@@ -122,11 +113,11 @@ body {
 }
 
 
-/* ===============================
+/* =========================
    MOBILE
-   =============================== */
+   ========================= */
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 
     .desktop {
         display: none;
@@ -171,112 +162,70 @@ body {
         height: 0.65%;
     }
 }
-
 </style>
 </head>
-
 
 <body>
 
 
-<!-- ===============================
+<!-- =========================
      DESKTOP
-     =============================== -->
+     ========================= -->
 
 <div class="design desktop">
 
-    <img
-        src="./deskctop final (3).png"
-        alt="BMO Centre Exhibitor Advertising">
-
+    <img src="./deskctop final (3).png"
+         alt="BMO Centre Exhibitor Advertising">
 
     <a class="hotspot top-email"
-       href="mailto:exhibitorads@calgarystampede.com"
-       aria-label="Email Exhibitor Advertising">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com"></a>
 
     <a class="hotspot top-phone"
-       href="tel:+14034794731"
-       aria-label="Call Exhibitor Advertising">
-    </a>
-
+       href="tel:+14034794731"></a>
 
     <a class="hotspot book-kiosk"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
-       aria-label="Book Mobile Kiosk Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"></a>
 
     <a class="hotspot book-exhibit"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
-       aria-label="Book Exhibit Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"></a>
 
     <a class="hotspot book-facility"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
-       aria-label="Book Facility Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"></a>
 
     <a class="hotspot bottom-email"
-       href="mailto:exhibitorads@calgarystampede.com"
-       aria-label="Email Exhibitor Advertising">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com"></a>
 
     <a class="hotspot bottom-phone"
-       href="tel:+14034794731"
-       aria-label="Call Exhibitor Advertising">
-    </a>
+       href="tel:+14034794731"></a>
 
 </div>
 
 
-
-<!-- ===============================
+<!-- =========================
      MOBILE
-     =============================== -->
+     ========================= -->
 
 <div class="design mobile">
 
-    <img
-        src="./mobile final v.png"
-        alt="BMO Centre Exhibitor Advertising">
-
+    <img src="./mobile final v.png"
+         alt="BMO Centre Exhibitor Advertising">
 
     <a class="hotspot book-kiosk"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
-       aria-label="Book Mobile Kiosk Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"></a>
 
     <a class="hotspot book-exhibit"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
-       aria-label="Book Exhibit Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"></a>
 
     <a class="hotspot book-facility"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
-       aria-label="Book Facility Display">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"></a>
 
     <a class="hotspot bottom-email"
-       href="mailto:exhibitorads@calgarystampede.com"
-       aria-label="Email Exhibitor Advertising">
-    </a>
-
+       href="mailto:exhibitorads@calgarystampede.com"></a>
 
     <a class="hotspot bottom-phone"
-       href="tel:+14034794731"
-       aria-label="Call Exhibitor Advertising">
-    </a>
+       href="tel:+14034794731"></a>
 
 </div>
-
 
 </body>
 </html>
