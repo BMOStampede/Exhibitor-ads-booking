@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>BMO Centre Exhibitor Advertising</title>
+
+<style>
+
+/* =========================
+   BASIC PAGE
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #ffffff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   DESIGNS
+   ========================= */
+
+.design {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.design > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* =========================
+   CLICKABLE AREAS
+   ========================= */
+
+.hotspot {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+
+    /* TEMPORARY RED TEST AREA */
+    background: rgba(255, 0, 0, 0.40);
+}
+
+
+/* ==================================================
+   DESKTOP POSITIONS
+   ================================================== */
+
+/* TOP EMAIL */
+
+.desktop .top-email {
+    left: 65%;
+    top: 0.7%;
+    width: 27%;
+    height: 1.3%;
+}
+
+
+/* TOP PHONE */
+
+.desktop .top-phone {
+    left: 65%;
+    top: 2.0%;
+    width: 20%;
+    height: 1.2%;
+}
+
+
+/* MOBILE KIOSK - BOOK NOW */
+
+.desktop .book-kiosk {
+    left: 78%;
+    top: 24.0%;
+    width: 14%;
+    height: 1.7%;
+}
+
+
+/* EXHIBIT DISPLAY - BOOK NOW */
+
+.desktop .book-exhibit {
+    left: 78%;
+    top: 34.8%;
+    width: 14%;
+    height: 1.7%;
+}
+
+
+/* FACILITY DISPLAY - BOOK NOW */
+
+.desktop .book-facility {
+    left: 78%;
+    top: 46.0%;
+    width: 14%;
+    height: 1.7%;
+}
+
+
+/* BOTTOM EMAIL */
+
+.desktop .bottom-email {
+    left: 30%;
+    top: 61.0%;
+    width: 40%;
+    height: 1.5%;
+}
+
+
+/* BOTTOM PHONE */
+
+.desktop .bottom-phone {
+    left: 39%;
+    top: 62.6%;
+    width: 24%;
+    height: 1.4%;
+}
+
+
+/* ==================================================
+   MOBILE VERSION
+   ================================================== */
+
+@media screen and (max-width: 900px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
+    /* MOBILE KIOSK - BOOK NOW */
+
+    .mobile .book-kiosk {
+        left: 72%;
+        top: 26.2%;
+        width: 21%;
+        height: 1.6%;
+    }
+
+
+    /* EXHIBIT DISPLAY - BOOK NOW */
+
+    .mobile .book-exhibit {
+        left: 72%;
+        top: 39.6%;
+        width: 21%;
+        height: 1.6%;
+    }
+
+
+    /* FACILITY DISPLAY - BOOK NOW */
+
+    .mobile .book-facility {
+        left: 71%;
+        top: 55.1%;
+        width: 22%;
+        height: 1.6%;
+    }
+
+
+    /* BOTTOM EMAIL */
+
+    .mobile .bottom-email {
+        left: 19%;
+        top: 68.1%;
+        width: 64%;
+        height: 1.6%;
+    }
+
+
+    /* BOTTOM PHONE */
+
+    .mobile .bottom-phone {
+        left: 34%;
+        top: 69.6%;
+        width: 37%;
+        height: 1.5%;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     DESKTOP
+     ================================================== -->
+
+<div class="design desktop">
+
+    <img
+        src="desktop.svg"
+        alt="BMO Centre Exhibitor Advertising">
+
+
+    <!-- TOP EMAIL -->
+
+    <a
+        class="hotspot top-email"
+        href="mailto:exhibitorads@calgarystampede.com"
+        aria-label="Email Exhibitor Advertising">
+    </a>
+
+
+    <!-- TOP PHONE -->
+
+    <a
+        class="hotspot top-phone"
+        href="tel:+14034794731"
+        aria-label="Call Exhibitor Advertising">
+    </a>
+
+
+    <!-- MOBILE KIOSK BOOK NOW -->
+
+    <a
+        class="hotspot book-kiosk"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
+        aria-label="Book Mobile Kiosk Display">
+    </a>
+
+
+    <!-- EXHIBIT DISPLAY BOOK NOW -->
+
+    <a
+        class="hotspot book-exhibit"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
+        aria-label="Book Exhibit Display">
+    </a>
+
+
+    <!-- FACILITY DISPLAY BOOK NOW -->
+
+    <a
+        class="hotspot book-facility"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
+        aria-label="Book Facility Display">
+    </a>
+
+
+    <!-- BOTTOM EMAIL -->
+
+    <a
+        class="hotspot bottom-email"
+        href="mailto:exhibitorads@calgarystampede.com"
+        aria-label="Email Exhibitor Advertising">
+    </a>
+
+
+    <!-- BOTTOM PHONE -->
+
+    <a
+        class="hotspot bottom-phone"
+        href="tel:+14034794731"
+        aria-label="Call Exhibitor Advertising">
+    </a>
+
+</div>
+
+
+
+<!-- ==================================================
+     MOBILE
+     ================================================== -->
+
+<div class="design mobile">
+
+    <img
+        src="mobile.svg"
+        alt="BMO Centre Exhibitor Advertising">
+
+
+    <!-- MOBILE KIOSK BOOK NOW -->
+
+    <a
+        class="hotspot book-kiosk"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
+        aria-label="Book Mobile Kiosk Display">
+    </a>
+
+
+    <!-- EXHIBIT DISPLAY BOOK NOW -->
+
+    <a
+        class="hotspot book-exhibit"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
+        aria-label="Book Exhibit Display">
+    </a>
+
+
+    <!-- FACILITY DISPLAY BOOK NOW -->
+
+    <a
+        class="hotspot book-facility"
+        href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
+        aria-label="Book Facility Display">
+    </a>
+
+
+    <!-- BOTTOM EMAIL -->
+
+    <a
+        class="hotspot bottom-email"
+        href="mailto:exhibitorads@calgarystampede.com"
+        aria-label="Email Exhibitor Advertising">
+    </a>
+
+
+    <!-- BOTTOM PHONE -->
+
+    <a
+        class="hotspot bottom-phone"
+        href="tel:+14034794731"
+        aria-label="Call Exhibitor Advertising">
+    </a>
+
+</div>
+
+
+</body>
+</html>
