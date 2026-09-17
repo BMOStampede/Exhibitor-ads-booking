@@ -1,231 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>BMO Centre Exhibitor Advertising</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>BMO Centre Exhibitor Advertising</title>
 
-html, body {
-    width: 100%;
-    min-height: 100%;
-    background: #fff;
-}
+    <style>
 
-body {
-    overflow-x: hidden;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* PAGE IMAGE */
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            background: #ffffff;
+        }
 
-.design {
-    position: relative;
-    width: 100%;
-}
-
-.design img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* DESKTOP BY DEFAULT */
-
-.desktop {
-    display: block;
-}
-
-.mobile {
-    display: none;
-}
-
-/* CLICKABLE AREAS */
-
-.hotspot {
-    position: absolute;
-    display: block;
-    z-index: 10;
-    cursor: pointer;
-
-    /* TEMPORARY RED SO WE CAN POSITION THEM */
-    background: rgba(255, 0, 0, 0.30);
-}
+        body {
+            overflow-x: hidden;
+        }
 
 
-/* =========================
-   DESKTOP LINKS
-   ========================= */
+        /* =========================
+           GENERAL DESIGN
+           ========================= */
 
-.desktop .top-email {
-    left: 66%;
-    top: 1.15%;
-    width: 26%;
-    height: 0.70%;
-}
+        .design {
+            position: relative;
+            width: 100%;
+        }
 
-.desktop .top-phone {
-    left: 73%;
-    top: 2.05%;
-    width: 19%;
-    height: 0.70%;
-}
-
-.desktop .book-kiosk {
-    left: 75%;
-    top: 24.25%;
-    width: 17%;
-    height: 0.80%;
-}
-
-.desktop .book-exhibit {
-    left: 75%;
-    top: 35.05%;
-    width: 17%;
-    height: 0.80%;
-}
-
-.desktop .book-facility {
-    left: 75%;
-    top: 46.25%;
-    width: 17%;
-    height: 0.80%;
-}
-
-.desktop .bottom-email {
-    left: 31%;
-    top: 61.25%;
-    width: 38%;
-    height: 0.70%;
-}
-
-.desktop .bottom-phone {
-    left: 40%;
-    top: 62.55%;
-    width: 22%;
-    height: 0.70%;
-}
+        .design img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
 
-/* =========================
-   MOBILE
-   ========================= */
+        /* DESKTOP DEFAULT */
 
-@media (max-width: 900px) {
+        .desktop {
+            display: block;
+        }
 
-    .desktop {
-        display: none;
-    }
+        .mobile {
+            display: none;
+        }
 
-    .mobile {
-        display: block;
-    }
 
-    .mobile .book-kiosk {
-        left: 73%;
-        top: 26.35%;
-        width: 20%;
-        height: 0.70%;
-    }
+        /* =========================
+           CLICKABLE AREAS
+           ========================= */
 
-    .mobile .book-exhibit {
-        left: 73%;
-        top: 39.75%;
-        width: 20%;
-        height: 0.70%;
-    }
+        .hotspot {
+            position: absolute;
+            display: block;
+            z-index: 20;
+            cursor: pointer;
 
-    .mobile .book-facility {
-        left: 72%;
-        top: 55.30%;
-        width: 21%;
-        height: 0.70%;
-    }
+            /* TEMPORARY RED FOR TESTING */
+            background: rgba(255, 0, 0, 0.30);
+        }
 
-    .mobile .bottom-email {
-        left: 21%;
-        top: 68.35%;
-        width: 61%;
-        height: 0.65%;
-    }
 
-    .mobile .bottom-phone {
-        left: 36%;
-        top: 69.75%;
-        width: 34%;
-        height: 0.65%;
-    }
-}
-</style>
+        /* =========================
+           DESKTOP HOTSPOTS
+           ========================= */
+
+        .desktop .top-email {
+            left: 66%;
+            top: 1.15%;
+            width: 26%;
+            height: 0.70%;
+        }
+
+        .desktop .top-phone {
+            left: 73%;
+            top: 2.05%;
+            width: 19%;
+            height: 0.70%;
+        }
+
+        .desktop .book-kiosk {
+            left: 75%;
+            top: 24.25%;
+            width: 17%;
+            height: 0.80%;
+        }
+
+        .desktop .book-exhibit {
+            left: 75%;
+            top: 35.05%;
+            width: 17%;
+            height: 0.80%;
+        }
+
+        .desktop .book-facility {
+            left: 75%;
+            top: 46.25%;
+            width: 17%;
+            height: 0.80%;
+        }
+
+        .desktop .bottom-email {
+            left: 31%;
+            top: 61.25%;
+            width: 38%;
+            height: 0.70%;
+        }
+
+        .desktop .bottom-phone {
+            left: 40%;
+            top: 62.55%;
+            width: 22%;
+            height: 0.70%;
+        }
+
+
+        /* =========================
+           MOBILE VERSION
+           ========================= */
+
+        @media screen and (max-width: 900px) {
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+
+            .mobile .book-kiosk {
+                left: 73%;
+                top: 26.35%;
+                width: 20%;
+                height: 0.70%;
+            }
+
+            .mobile .book-exhibit {
+                left: 73%;
+                top: 39.75%;
+                width: 20%;
+                height: 0.70%;
+            }
+
+            .mobile .book-facility {
+                left: 72%;
+                top: 55.30%;
+                width: 21%;
+                height: 0.70%;
+            }
+
+            .mobile .bottom-email {
+                left: 21%;
+                top: 68.35%;
+                width: 61%;
+                height: 0.65%;
+            }
+
+            .mobile .bottom-phone {
+                left: 36%;
+                top: 69.75%;
+                width: 34%;
+                height: 0.65%;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
 
-<!-- =========================
-     DESKTOP
-     ========================= -->
+    <!-- =================================
+         DESKTOP
+         ================================= -->
 
-<div class="design desktop">
+    <div class="design desktop">
 
-    <img src="./deskctop final (3).png"
-         alt="BMO Centre Exhibitor Advertising">
-
-    <a class="hotspot top-email"
-       href="mailto:exhibitorads@calgarystampede.com"></a>
-
-    <a class="hotspot top-phone"
-       href="tel:+14034794731"></a>
-
-    <a class="hotspot book-kiosk"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"></a>
-
-    <a class="hotspot book-exhibit"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"></a>
-
-    <a class="hotspot book-facility"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"></a>
-
-    <a class="hotspot bottom-email"
-       href="mailto:exhibitorads@calgarystampede.com"></a>
-
-    <a class="hotspot bottom-phone"
-       href="tel:+14034794731"></a>
-
-</div>
+        <img src="./deskctop final (3).png"
+             alt="BMO Centre Exhibitor Advertising">
 
 
-<!-- =========================
-     MOBILE
-     ========================= -->
+        <!-- TOP EMAIL -->
 
-<div class="design mobile">
+        <a class="hotspot top-email"
+           href="mailto:exhibitorads@calgarystampede.com"
+           aria-label="Email Exhibitor Advertising">
+        </a>
 
-    <img src="./mobile final v.png"
-         alt="BMO Centre Exhibitor Advertising">
 
-    <a class="hotspot book-kiosk"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"></a>
+        <!-- TOP PHONE -->
 
-    <a class="hotspot book-exhibit"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"></a>
+        <a class="hotspot top-phone"
+           href="tel:+14034794731"
+           aria-label="Call Exhibitor Advertising">
+        </a>
 
-    <a class="hotspot book-facility"
-       href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"></a>
 
-    <a class="hotspot bottom-email"
-       href="mailto:exhibitorads@calgarystampede.com"></a>
+        <!-- MOBILE KIOSK BOOK NOW -->
 
-    <a class="hotspot bottom-phone"
-       href="tel:+14034794731"></a>
+        <a class="hotspot book-kiosk"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
+           aria-label="Book Mobile Kiosk Display">
+        </a>
 
-</div>
+
+        <!-- EXHIBIT DISPLAY BOOK NOW -->
+
+        <a class="hotspot book-exhibit"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
+           aria-label="Book Exhibit Display">
+        </a>
+
+
+        <!-- FACILITY DISPLAY BOOK NOW -->
+
+        <a class="hotspot book-facility"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
+           aria-label="Book Facility Display">
+        </a>
+
+
+        <!-- BOTTOM EMAIL -->
+
+        <a class="hotspot bottom-email"
+           href="mailto:exhibitorads@calgarystampede.com"
+           aria-label="Email Exhibitor Advertising">
+        </a>
+
+
+        <!-- BOTTOM PHONE -->
+
+        <a class="hotspot bottom-phone"
+           href="tel:+14034794731"
+           aria-label="Call Exhibitor Advertising">
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================
+         MOBILE
+         ================================= -->
+
+    <div class="design mobile">
+
+        <img src="./mobile final (3).png"
+             alt="BMO Centre Exhibitor Advertising">
+
+
+        <!-- MOBILE KIOSK BOOK NOW -->
+
+        <a class="hotspot book-kiosk"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Mobile%20Kiosk%20Display%20Booking"
+           aria-label="Book Mobile Kiosk Display">
+        </a>
+
+
+        <!-- EXHIBIT DISPLAY BOOK NOW -->
+
+        <a class="hotspot book-exhibit"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Exhibit%20Display%20Booking"
+           aria-label="Book Exhibit Display">
+        </a>
+
+
+        <!-- FACILITY DISPLAY BOOK NOW -->
+
+        <a class="hotspot book-facility"
+           href="mailto:exhibitorads@calgarystampede.com?subject=Facility%20Display%20Booking"
+           aria-label="Book Facility Display">
+        </a>
+
+
+        <!-- BOTTOM EMAIL -->
+
+        <a class="hotspot bottom-email"
+           href="mailto:exhibitorads@calgarystampede.com"
+           aria-label="Email Exhibitor Advertising">
+        </a>
+
+
+        <!-- BOTTOM PHONE -->
+
+        <a class="hotspot bottom-phone"
+           href="tel:+14034794731"
+           aria-label="Call Exhibitor Advertising">
+        </a>
+
+    </div>
+
 
 </body>
 </html>
