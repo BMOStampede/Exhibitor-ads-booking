@@ -7,52 +7,41 @@
   <title>Exhibitor Ads</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     html,
     body {
       margin: 0;
       padding: 0;
       width: 100%;
-      background: white;
+      min-height: 100%;
+      background: #ffffff;
     }
 
-    .desktop-image,
-    .mobile-image {
+    #page-image {
       display: block;
       width: 100%;
       height: auto;
-    }
-
-    .mobile-image {
-      display: none;
-    }
-
-    @media screen and (max-width: 767px) {
-      .desktop-image {
-        display: none;
-      }
-
-      .mobile-image {
-        display: block;
-      }
     }
   </style>
 </head>
 
 <body>
-  <img
-    class="desktop-image"
-    src="./desktop.png"
-    alt="Exhibitor advertising information"
-  >
 
-  <img
-    class="mobile-image"
-    src="./mobile.png"
-    alt="Exhibitor advertising information"
-  >
+  <img id="page-image" alt="Exhibitor advertising information">
+
+  <script>
+    const image = document.getElementById("page-image");
+
+    const isMobile =
+      window.innerWidth <= 768 ||
+      screen.width <= 768 ||
+      /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      image.src = "./mobile.png?v=10";
+    } else {
+      image.src = "./desktop.png?v=10";
+    }
+  </script>
+
 </body>
 </html>
